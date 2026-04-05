@@ -1,38 +1,69 @@
-# Recipe Demo Application
+# 🍳 Recipe Demo: Smart Recipe Generator
 
-A mobile application for browsing and discovering new recipes.
+A modern, AI-powered recipe discovery application built with **React** and **Firebase AI Logic**, leveraging **Gemini 2.5 Flash Lite** to turn your leftover ingredients into delicious West African meals.
 
-## Preview
+This application provides a seamless experience for home cooks, allowing users to input available ingredients and receive authentic, culturally rich recipe suggestions with a friendly, expert touch.
 
-| ![Screen 1](s1.png) | ![Screen 2](s2.png) | ![Screen 3](s3.png) |
+![AI Powered](https://img.shields.io/badge/AI-Gemini--2.5--Flash--Lite-blue)
+![Firebase](https://img.shields.io/badge/Backend-Firebase-ffca28?logo=firebase)
+![React](https://img.shields.io/badge/Frontend-React-61dafb?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind--CSS-38b2ac?logo=tailwind-css)
+
+## 📱 App Preview
+
+> **Interface Design**: Featuring a clean, centered layout with high-quality visual feedback. The UI focuses on simplicity, making it easy to generate recipes on the fly with smooth streaming responses.
+
+| ![Home Screen](s1.png) | ![Recipe Generation](s2.png) | ![Search Results](s3.png) |
 | :---: | :---: | :---: |
-| Home Screen | Recipe Details | Search Results |
+| **Home Screen** | **AI Generation** | **Detailed Recipe** |
 
-## Features
+## ✨ Features
 
-- **Recipe Discovery**: Browse a collection of delicious recipes.
-- **Detailed Instructions**: Step-by-step guides for each recipe.
-- **Visual Previews**: High-quality images for each dish.
+- **🧠 Intelligent Chef**: Powered by Gemini 2.5 Flash Lite, acting as a knowledgeable Ghanaian chef with expertise in West African cuisine.
+- **✨ Instant Generation**: Uses Firebase AI Logic for real-time streaming of recipe content.
+- **🇬🇭 Cultural Authenticity**: Provides recipes with local language names (Twi, Ga, Ewe, etc.) and cultural context.
+- **📱 Responsive UI**: A mobile-first, clean web interface built with React and Tailwind CSS.
+- **🔄 Smart Reset**: Easily clear your ingredients and start a new culinary journey with one click.
 
-## Getting Started
+## 🛠️ Tech Stack
 
-Follow these instructions to get the project up and running on your local machine.
+- **Framework**: [React](https://reactjs.org/) (JavaScript)
+- **AI Backend**: [Firebase AI Logic](https://firebase.google.com/docs/ai) with Gemini 2.5 Flash Lite
+- **Styling**: Tailwind CSS
+- **Deployment**: Firebase Hosting (Recommended)
 
-### Installation
+## 🚀 Quick Start
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Mtettey29/recipedemo.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd recipedemo
-   ```
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
+### 1. Prerequisites
+- [Node.js](https://nodejs.org/) installed locally.
+- A [Firebase Project](https://console.firebase.google.com/) with AI Logic enabled.
 
-## License
+### 2. Setup
+```bash
+# Clone the repository
+git clone https://github.com/Mtettey29/recipedemo.git
+cd recipedemo
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Install dependencies
+npm install
+```
+
+### 3. Configuration
+Update your Firebase configuration in `src/firebase.js`:
+```javascript
+const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT.firebaseapp.com",
+    projectId: "YOUR_PROJECT",
+    // ... other config values
+};
+```
+
+### 4. Run Locally
+```bash
+npm start
+```
+Visit `http://localhost:3000` to start cooking!
+
+---
+*Built with ⚡ for the Build with AI Event. ©2026*
