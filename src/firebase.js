@@ -2,14 +2,14 @@
 import { initializeApp } from "firebase/app";
 import { getAI, getGenerativeModel, GoogleAIBackend } from "firebase/ai";
 
-// Replace these values with your own from the Firebase Console
+// Replace these values with your own from the Firebase Console or .env file
 const firebaseConfig = {
-    apiKey: "REPLACED_FIREBASE_API_KEY",
-    authDomain: "gdgrecipegen.firebaseapp.com",
-    projectId: "gdgrecipegen",
-    storageBucket: "gdgrecipegen.firebasestorage.app",
-    messagingSenderId: "179109305558",
-    appId: "1:179109305558:web:7afd43b937514b7602fd77",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
